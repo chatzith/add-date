@@ -13,4 +13,9 @@ current_date = datetime.now()
 
 future_date = (current_date + timedelta(days)).strftime("%d/%m/%Y")
 
-print(future_date)
+RESULT = f"""
+The date after {days} days from now ({current_date.strftime("%d/%m/%Y")}) is:
+{future_date}
+"""
+
+print(RESULT)
